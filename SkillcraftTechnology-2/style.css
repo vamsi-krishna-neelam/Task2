@@ -1,0 +1,86 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #528eb9; /* Light blue background */
+}
+
+.stopwatch {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid #1976d2; /* Blue border */
+}
+
+#display {
+    font-size: 4rem;
+    margin: 20px 0;
+    color: #1976d2; /* Blue text */
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.controls button {
+    margin: 5px;
+    padding: 15px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#startBtn, #pauseBtn, #resetBtn, #lapBtn {
+    background-color: #1976d2; /* Button background color */
+    color: white; /* Button text color */
+}
+
+#startBtn:hover, #pauseBtn:hover, #resetBtn:hover, #lapBtn:hover {
+    background-color: #1565c0; /* Darker blue on hover */
+}
+
+#resetBtn {
+    background-color: #f44336; /* Red for Reset */
+}
+
+#resetBtn:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+#restartBtn {
+    background-color: #4caf50; /* Green for Restart */
+    color: white;
+}
+
+#restartBtn:hover {
+    background-color: #388e3c; /* Darker green on hover */
+}
+
+.controls button:disabled {
+    background-color: #ccc; /* Disabled button color */
+    cursor: not-allowed;
+}
+
+h1, h2 {
+    color: #424242; /* Dark grey color for headers */
+}
+
+#lapList {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+#lapList li {
+    background-color: #bbdefb; /* Light blue for lap items */
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: #0d47a1; /* Darker blue for lap text */
+}
